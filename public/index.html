@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Chat</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="shell">
+  <section class="hero"><p class="eyebrow">EDUCATIONAL DEMO · PUBLIC ROOM</p><h1>Global <span>Chat</span></h1><p class="subtitle">A tiny place for everyone to say hello.</p></section>
+  <section class="card" aria-live="polite">
+    <div class="card-heading"><div><p class="eyebrow">OPEN LOUNGE</p><h2 id="status">Join the conversation</h2></div><div class="online-dot">● LIVE</div></div>
+    <form id="join-form" class="join-form"><label for="display-name">Choose a display name</label><div class="inline-form"><input id="display-name" maxlength="40" placeholder="e.g. RiverStone" required><button>Join room</button></div><small>No password or authentication in this educational demo.</small></form>
+    <div id="chat" class="chat hidden"><div id="messages" class="messages"><p class="empty">Loading messages…</p></div><form id="message-form" class="message-form"><input id="message" maxlength="500" placeholder="Write something kind…" autocomplete="off" required><button aria-label="Send message">Send ↗</button></form></div>
+    <p id="error" class="error" role="alert"></p>
+  </section><footer>Built for learning · Messages are public</footer>
+</main><script src="/app.js"></script>
+</body>
+</html>
